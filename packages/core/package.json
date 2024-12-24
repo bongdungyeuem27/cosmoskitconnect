@@ -1,0 +1,58 @@
+{
+  "name": "@cosmoskitconnect/core",
+  "description": "Core for WalletConnect Protocol",
+  "version": "2.17.3",
+  "author": "WalletConnect, Inc. <walletconnect.com>",
+  "homepage": "https://github.com/walletconnect/walletconnect-monorepo/",
+  "license": "Apache-2.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "wallet",
+    "walletconnect"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:pre": "bun run clean",
+    "build:types": "tsc",
+    "build:source": "rollup --config rollup.config.js",
+    "build": "bun run build:pre; bun run build:source; bun run build:types",
+    "test:pre": "rm -rf ./test/tmp",
+    "test:run": "vitest run --dir test",
+    "test": "bun run test:pre; bun run test:run",
+    "test:ignoreUnhandled": "bun run test:pre; bun run test:run -- --dangerouslyIgnoreUnhandledErrors",
+    "lint": "eslint -c '../../.eslintrc' --fix './src/**/*.ts'",
+    "prettier": "prettier --check '{src,test}/**/*.{js,ts,jsx,tsx}'"
+  },
+  "dependencies": {
+    "@cosmoskitconnect/heartbeat": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-provider": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-types": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-utils": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-ws-connection": "workspace:*",
+    "@cosmoskitconnect/keyvaluestorage": "workspace:*",
+    "@cosmoskitconnect/logger": "workspace:*",
+    "@cosmoskitconnect/relay-api": "workspace:*",
+    "@cosmoskitconnect/relay-auth": "workspace:*",
+    "@cosmoskitconnect/safe-json": "workspace:*",
+    "@cosmoskitconnect/time": "workspace:*",
+    "@cosmoskitconnect/types": "workspace:*",
+    "@cosmoskitconnect/utils": "workspace:*",
+    "@cosmoskitconnect/window-getters": "workspace:*",
+    "events": "3.3.0",
+    "lodash.isequal": "4.5.0",
+    "uint8arrays": "3.1.0"
+  },
+  "devDependencies": {
+    "@types/lodash.isequal": "4.5.6"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

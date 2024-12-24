@@ -1,0 +1,57 @@
+{
+  "name": "@cosmoskitconnect/sign-client",
+  "description": "Sign Client for WalletConnect Protocol",
+  "version": "2.17.3",
+  "author": "WalletConnect, Inc. <walletconnect.com>",
+  "homepage": "https://github.com/walletconnect/walletconnect-monorepo/",
+  "license": "Apache-2.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "wallet",
+    "walletconnect"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:pre": "bun run clean",
+    "build:types": "tsc",
+    "build:source": "rollup --config rollup.config.js",
+    "build": "bun run build:pre; bun run build:source; bun run build:types",
+    "test:pre": "rm -rf ./test/tmp && mkdir ./test/tmp",
+    "test:run": "vitest run --dir test/sdk",
+    "test:concurrency": "vitest run --dir test/concurrency",
+    "test:xregion": "vitest run --dir test/xregion -- --dangerouslyIgnoreUnhandledErrors --segfault-retry=3",
+    "test": "bun run test:pre; bun run test:run",
+    "test:integration": "vitest run --dir test/sdk/integration",
+    "test:ignoreUnhandled": "bun run test:pre; bun run test:integration -- --dangerouslyIgnoreUnhandledErrors --segfault-retry=3",
+    "test:canary": "vitest run --dir test/canary",
+    "test:lifecycle": "vitest run --dir test/lifecycle -- --dangerouslyIgnoreUnhandledErrors --segfault-retry=3",
+    "canary": "bun run test:pre; bun run test:canary",
+    "loadtest": "bun run test:pre; bun run test:concurrency",
+    "lint": "eslint -c '../../.eslintrc' --fix './src/**/*.ts'",
+    "prettier": "prettier --check '{src,test}/**/*.{js,ts,jsx,tsx}'"
+  },
+  "dependencies": {
+    "@cosmoskitconnect/core": "workspace:*",
+    "@cosmoskitconnect/events": "workspace:*",
+    "@cosmoskitconnect/heartbeat": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-utils": "workspace:*",
+    "@cosmoskitconnect/logger": "workspace:*",
+    "@cosmoskitconnect/time": "workspace:*",
+    "@cosmoskitconnect/types": "workspace:*",
+    "@cosmoskitconnect/utils": "workspace:*",
+    "events": "3.3.0"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-cloudwatch": "3.450.0",
+    "@cosmoskitconnect/jsonrpc-provider": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-ws-connection": "workspace:*",
+    "@cosmoskitconnect/relay-api": "workspace:*"
+  }
+}

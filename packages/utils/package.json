@@ -1,0 +1,60 @@
+{
+  "name": "@cosmoskitconnect/utils",
+  "description": "Utilities for WalletConnect Protocol",
+  "version": "2.17.3",
+  "author": "WalletConnect, Inc. <walletconnect.com>",
+  "homepage": "https://github.com/walletconnect/walletconnect-monorepo/",
+  "license": "Apache-2.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "wallet",
+    "walletconnect"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:pre": "bun run clean",
+    "build:types": "tsc",
+    "build:source": "rollup --config rollup.config.js",
+    "build": "bun run build:pre; bun run build:source; bun run build:types",
+    "test:pre": "rm -rf ./test/test.db",
+    "test:run": "vitest run --dir test",
+    "test": "bun run test:pre; bun run test:run",
+    "test:ignoreUnhandled": "bun run test:pre; bun run test:run -- --dangerouslyIgnoreUnhandledErrors",
+    "lint": "eslint -c '../../.eslintrc' --fix './src/**/*.ts'",
+    "prettier": "prettier --check '{src,test}/**/*.{js,ts,jsx,tsx}'"
+  },
+  "dependencies": {
+    "@cosmoskitconnect/jsonrpc-utils": "workspace:*",
+    "@cosmoskitconnect/keyvaluestorage": "workspace:*",
+    "@cosmoskitconnect/relay-api": "workspace:*",
+    "@cosmoskitconnect/relay-auth": "workspace:*",
+    "@cosmoskitconnect/safe-json": "workspace:*",
+    "@cosmoskitconnect/time": "workspace:*",
+    "@cosmoskitconnect/types": "workspace:*",
+    "@cosmoskitconnect/window-getters": "workspace:*",
+    "@cosmoskitconnect/window-metadata": "workspace:*",
+    "@ethersproject/hash": "5.7.0",
+    "@ethersproject/transactions": "5.7.0",
+    "@stablelib/chacha20poly1305": "1.0.1",
+    "@stablelib/hkdf": "1.0.1",
+    "@stablelib/random": "1.0.2",
+    "@stablelib/sha256": "1.0.1",
+    "@stablelib/x25519": "1.0.3",
+    "detect-browser": "5.3.0",
+    "elliptic": "6.6.1",
+    "query-string": "7.1.3",
+    "uint8arrays": "3.1.0"
+  },
+  "devDependencies": {
+    "@cosmoskitconnect/jsonrpc-types": "workspace:*",
+    "@types/elliptic": "6.4.18",
+    "@types/lodash.isequal": "4.5.6"
+  }
+}
