@@ -1,0 +1,27 @@
+import { Logger } from "@cosmoskitconnect/logger";
+import { ICore, IEventClient } from "@cosmoskitconnect/types";
+export declare class EventClient extends IEventClient {
+    core: ICore;
+    logger: Logger;
+    readonly context = "event-client";
+    private readonly storagePrefix;
+    private readonly storageVersion;
+    private events;
+    private shouldPersist;
+    constructor(core: ICore, logger: Logger, telemetryEnabled?: boolean);
+    get storageKey(): string;
+    init: IEventClient["init"];
+    createEvent: IEventClient["createEvent"];
+    getEvent: IEventClient["getEvent"];
+    deleteEvent: IEventClient["deleteEvent"];
+    private setEventListeners;
+    private setMethods;
+    private addTrace;
+    private setError;
+    private persist;
+    private restore;
+    private submit;
+    private sendEvent;
+    private getAppDomain;
+}
+//# sourceMappingURL=events.d.ts.map
