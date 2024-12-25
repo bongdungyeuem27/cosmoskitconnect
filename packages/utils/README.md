@@ -1,3 +1,3 @@
-# @walletconnect/utils
+# @cosmoskitconnect/utils
 
 Utilities for WalletConnect Protocol

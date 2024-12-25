@@ -1,6 +1,6 @@
-import { IEvents } from "@walletconnect/events";
-import { ErrorResponse } from "@walletconnect/jsonrpc-types";
-import { Logger } from "@walletconnect/logger";
+import { IEvents } from "@cosmoskitconnect/events";
+import { ErrorResponse } from "@cosmoskitconnect/jsonrpc-types";
+import { Logger } from "@cosmoskitconnect/logger";
 
 import { IRelayer, RelayerTypes } from "./relayer";
 

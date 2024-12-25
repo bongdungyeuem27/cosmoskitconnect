@@ -1,14 +1,14 @@
-import { SessionTypes, ProposalTypes, RelayerTypes, EngineTypes } from "@walletconnect/types";
-import { ErrorResponse } from "@walletconnect/jsonrpc-types";
-import {
-  getNamespacesChains,
-  getNamespacesMethodsForChainId,
-  getNamespacesEventsForChainId,
-  getAccountsChains,
-} from "./namespaces";
-import { getSdkError, getInternalError } from "./errors";
-import { fromBase64, hasOverlap } from "./misc";
+import { ErrorResponse } from "@cosmoskitconnect/jsonrpc-types";
+import { EngineTypes, ProposalTypes, RelayerTypes, SessionTypes } from "@cosmoskitconnect/types";
 import { getChainsFromNamespace } from "./caip";
+import { getInternalError, getSdkError } from "./errors";
+import { fromBase64, hasOverlap } from "./misc";
+import {
+  getAccountsChains,
+  getNamespacesChains,
+  getNamespacesEventsForChainId,
+  getNamespacesMethodsForChainId,
+} from "./namespaces";
 
 export type ErrorObject = { message: string; code: number } | null;
 

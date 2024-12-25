@@ -1,8 +1,8 @@
-import { Logger } from "@walletconnect/logger";
-import { IAuth, ICore } from "@walletconnect/types";
+import { Logger } from "@cosmoskitconnect/logger";
+import { IAuth, ICore } from "@cosmoskitconnect/types";
+import { AuthKey } from "./authKey";
 import { AuthPairingTopic } from "./authPairingTopic";
 import { AuthRequest } from "./authRequest";
-import { AuthKey } from "./authKey";
 
 export class AuthStore {
   public authKeys: IAuth["authKeys"];

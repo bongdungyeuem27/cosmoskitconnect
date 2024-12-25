@@ -16,7 +16,7 @@
       "schedule": ["every weekend"]
     },
     {
-      "matchPackagePatterns": ["@walletconnect/*"],
+      "matchPackagePatterns": ["@cosmoskitconnect/*"],
       "schedule": ["at any time"]
     }
   ],

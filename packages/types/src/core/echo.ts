@@ -1,4 +1,4 @@
-import { Logger } from "@walletconnect/logger";
+import { Logger } from "@cosmoskitconnect/logger";
 
 export declare namespace EchoClientTypes {
   type RegisterDeviceTokenParams = {

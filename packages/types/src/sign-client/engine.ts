@@ -1,20 +1,20 @@
 import {
-  JsonRpcResponse,
-  JsonRpcRequest,
   ErrorResponse,
-  JsonRpcResult,
   JsonRpcError,
-} from "@walletconnect/jsonrpc-types";
-import { ISignClient } from "./client";
-import { RelayerTypes } from "../core/relayer";
-import { SessionTypes } from "./session";
-import { ProposalTypes } from "./proposal";
-import { PairingTypes } from "../core/pairing";
-import { JsonRpcTypes } from "./jsonrpc";
+  JsonRpcRequest,
+  JsonRpcResponse,
+  JsonRpcResult,
+} from "@cosmoskitconnect/jsonrpc-types";
 import { EventEmitter } from "events";
-import { PendingRequestTypes } from "./pendingRequest";
-import { AuthTypes } from "./auth";
 import { CryptoTypes } from "../core";
+import { PairingTypes } from "../core/pairing";
+import { RelayerTypes } from "../core/relayer";
+import { AuthTypes } from "./auth";
+import { ISignClient } from "./client";
+import { JsonRpcTypes } from "./jsonrpc";
+import { PendingRequestTypes } from "./pendingRequest";
+import { ProposalTypes } from "./proposal";
+import { SessionTypes } from "./session";
 
 export declare namespace EngineTypes {
   type Event =

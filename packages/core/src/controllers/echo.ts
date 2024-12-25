@@ -1,5 +1,5 @@
-import { generateChildLogger, Logger } from "@walletconnect/logger";
-import { IEchoClient } from "@walletconnect/types";
+import { generateChildLogger, Logger } from "@cosmoskitconnect/logger";
+import { IEchoClient } from "@cosmoskitconnect/types";
 import { ECHO_CONTEXT, ECHO_URL } from "../constants";
 
 export class EchoClient extends IEchoClient {

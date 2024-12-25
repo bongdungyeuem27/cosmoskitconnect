@@ -1,12 +1,12 @@
+import { decodeJWT } from "@cosmoskitconnect/relay-auth";
+import { CryptoTypes } from "@cosmoskitconnect/types";
 import { ChaCha20Poly1305 } from "@stablelib/chacha20poly1305";
 import { HKDF } from "@stablelib/hkdf";
 import { randomBytes } from "@stablelib/random";
 import { hash, SHA256 } from "@stablelib/sha256";
 import * as x25519 from "@stablelib/x25519";
-import { CryptoTypes } from "@walletconnect/types";
-import { concat, fromString, toString } from "uint8arrays";
 import { ec as EC } from "elliptic";
-import { decodeJWT } from "@walletconnect/relay-auth";
+import { concat, fromString, toString } from "uint8arrays";
 
 export const BASE10 = "base10";
 export const BASE16 = "base16";

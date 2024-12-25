@@ -1,10 +1,11 @@
-import { generateChildLogger, getLoggerContext, Logger } from "@walletconnect/logger";
-import { ICore, IVerify } from "@walletconnect/types";
-import { isBrowser, isTestRun, P256KeyDataType, verifyP256Jwt } from "@walletconnect/utils";
-import { FIVE_SECONDS, ONE_SECOND, toMiliseconds } from "@walletconnect/time";
-import { getDocument } from "@walletconnect/window-getters";
-import { decodeJWT } from "@walletconnect/relay-auth";
+import { generateChildLogger, getLoggerContext, Logger } from "@cosmoskitconnect/logger";
+import { decodeJWT } from "@cosmoskitconnect/relay-auth";
+import { FIVE_SECONDS, ONE_SECOND, toMiliseconds } from "@cosmoskitconnect/time";
+import { ICore, IVerify } from "@cosmoskitconnect/types";
+import { isBrowser, isTestRun, P256KeyDataType, verifyP256Jwt } from "@cosmoskitconnect/utils";
+import { getDocument } from "@cosmoskitconnect/window-getters";
 
+import { IKeyValueStorage } from "@cosmoskitconnect/keyvaluestorage";
 import {
   CORE_STORAGE_PREFIX,
   CORE_VERSION,
@@ -13,7 +14,6 @@ import {
   VERIFY_SERVER,
   VERIFY_SERVER_V3,
 } from "../constants";
-import { IKeyValueStorage } from "@walletconnect/keyvaluestorage";
 
 type Jwk = {
   publicKey: P256KeyDataType;

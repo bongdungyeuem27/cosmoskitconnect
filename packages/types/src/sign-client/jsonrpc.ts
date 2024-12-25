@@ -1,9 +1,9 @@
-import { ErrorResponse, JsonRpcResult } from "@walletconnect/jsonrpc-types";
-import { SignClientTypes } from "./client";
-import { RelayerTypes } from "../core/relayer";
-import { SessionTypes } from "./session";
-import { ProposalTypes } from "./proposal";
+import { ErrorResponse, JsonRpcResult } from "@cosmoskitconnect/jsonrpc-types";
 import { AuthTypes } from ".";
+import { RelayerTypes } from "../core/relayer";
+import { SignClientTypes } from "./client";
+import { ProposalTypes } from "./proposal";
+import { SessionTypes } from "./session";
 
 export declare namespace JsonRpcTypes {
   // -- core ------------------------------------------------------- //

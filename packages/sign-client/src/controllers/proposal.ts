@@ -1,8 +1,8 @@
-import { Store } from "@walletconnect/core";
-import { Logger } from "@walletconnect/logger";
-import { ICore, ProposalTypes } from "@walletconnect/types";
+import { Store } from "@cosmoskitconnect/core";
+import { Logger } from "@cosmoskitconnect/logger";
+import { ICore, ProposalTypes } from "@cosmoskitconnect/types";
 
-import { SIGN_CLIENT_STORAGE_PREFIX, PROPOSAL_CONTEXT } from "../constants";
+import { PROPOSAL_CONTEXT, SIGN_CLIENT_STORAGE_PREFIX } from "../constants";
 
 export class Proposal extends Store<number, ProposalTypes.Struct> {
   constructor(public core: ICore, public logger: Logger) {

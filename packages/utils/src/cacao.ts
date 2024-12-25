@@ -1,4 +1,4 @@
-import { AuthTypes } from "@walletconnect/types";
+import { AuthTypes } from "@cosmoskitconnect/types";
 import { getCommonValuesInArrays } from "./misc";
 import { verifySignature } from "./signatures";
 const didPrefix = "did:pkh:";

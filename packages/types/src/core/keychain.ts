@@ -1,4 +1,4 @@
-import { Logger } from "@walletconnect/logger";
+import { Logger } from "@cosmoskitconnect/logger";
 import { ICore } from "./core";
 
 export abstract class IKeyChain {

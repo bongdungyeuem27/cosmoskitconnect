@@ -4,7 +4,7 @@ import {
   JsonRpcRequest,
   JsonRpcResponse,
   JsonRpcResult,
-} from "@walletconnect/jsonrpc-types";
+} from "@cosmoskitconnect/jsonrpc-types";
 import { CoreTypes, ICore, IStore, RelayerTypes, Verify } from "../core";
 import { SessionTypes } from "./session";
 

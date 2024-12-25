@@ -1,5 +1,4 @@
-import { EventEmitter } from "events";
-import { JsonRpcProvider } from "@walletconnect/jsonrpc-provider";
+import { JsonRpcProvider } from "@cosmoskitconnect/jsonrpc-provider";
 import {
   formatJsonRpcResult,
   getBigIntRpcId,
@@ -9,23 +8,23 @@ import {
   JsonRpcPayload,
   JsonRpcRequest,
   RequestArguments,
-} from "@walletconnect/jsonrpc-utils";
-import WsConnection from "@walletconnect/jsonrpc-ws-connection";
+} from "@cosmoskitconnect/jsonrpc-utils";
+import WsConnection from "@cosmoskitconnect/jsonrpc-ws-connection";
 import {
   generateChildLogger,
   getDefaultLoggerOptions,
   getLoggerContext,
-  pino,
   Logger,
-} from "@walletconnect/logger";
-import { RelayJsonRpc } from "@walletconnect/relay-api";
+  pino,
+} from "@cosmoskitconnect/logger";
+import { RelayJsonRpc } from "@cosmoskitconnect/relay-api";
 import {
   FIVE_MINUTES,
-  ONE_SECOND,
   FIVE_SECONDS,
+  ONE_SECOND,
   THIRTY_SECONDS,
   toMiliseconds,
-} from "@walletconnect/time";
+} from "@cosmoskitconnect/time";
 import {
   ICore,
   IMessageTracker,
@@ -35,30 +34,31 @@ import {
   RelayerOptions,
   RelayerTypes,
   SubscriberTypes,
-} from "@walletconnect/types";
+} from "@cosmoskitconnect/types";
 import {
+  calcExpiry,
   createExpiringPromise,
   formatRelayRpcUrl,
-  isOnline,
-  subscribeToNetworkChange,
   getAppId,
+  getInternalError,
   isAndroid,
   isIos,
-  getInternalError,
   isNode,
-  calcExpiry,
-} from "@walletconnect/utils";
+  isOnline,
+  subscribeToNetworkChange,
+} from "@cosmoskitconnect/utils";
+import { EventEmitter } from "events";
 
 import {
-  RELAYER_SDK_VERSION,
   RELAYER_CONTEXT,
   RELAYER_DEFAULT_LOGGER,
+  RELAYER_DEFAULT_RELAY_URL,
   RELAYER_EVENTS,
   RELAYER_PROVIDER_EVENTS,
-  RELAYER_SUBSCRIBER_SUFFIX,
-  RELAYER_DEFAULT_RELAY_URL,
-  SUBSCRIBER_EVENTS,
   RELAYER_RECONNECT_TIMEOUT,
+  RELAYER_SDK_VERSION,
+  RELAYER_SUBSCRIBER_SUFFIX,
+  SUBSCRIBER_EVENTS,
   TRANSPORT_TYPES,
 } from "../constants";
 import { MessageTracker } from "./messages";

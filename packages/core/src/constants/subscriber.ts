@@ -1,4 +1,4 @@
-import { THIRTY_DAYS, FIVE_SECONDS } from "@walletconnect/time";
+import { FIVE_SECONDS, THIRTY_DAYS } from "@cosmoskitconnect/time";
 
 export const SUBSCRIBER_EVENTS = {
   created: "subscription_created",

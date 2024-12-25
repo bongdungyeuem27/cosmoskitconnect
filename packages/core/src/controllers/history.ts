@@ -1,10 +1,10 @@
-import { formatJsonRpcRequest, isJsonRpcError } from "@walletconnect/jsonrpc-utils";
-import { generateChildLogger, getLoggerContext, Logger } from "@walletconnect/logger";
-import { IJsonRpcHistory, JsonRpcRecord, RequestEvent, ICore } from "@walletconnect/types";
-import { calcExpiry, getInternalError } from "@walletconnect/utils";
+import { HEARTBEAT_EVENTS } from "@cosmoskitconnect/heartbeat";
+import { formatJsonRpcRequest, isJsonRpcError } from "@cosmoskitconnect/jsonrpc-utils";
+import { generateChildLogger, getLoggerContext, Logger } from "@cosmoskitconnect/logger";
+import { THIRTY_DAYS, toMiliseconds } from "@cosmoskitconnect/time";
+import { ICore, IJsonRpcHistory, JsonRpcRecord, RequestEvent } from "@cosmoskitconnect/types";
+import { calcExpiry, getInternalError } from "@cosmoskitconnect/utils";
 import { EventEmitter } from "events";
-import { THIRTY_DAYS, toMiliseconds } from "@walletconnect/time";
-import { HEARTBEAT_EVENTS } from "@walletconnect/heartbeat";
 import {
   CORE_STORAGE_PREFIX,
   HISTORY_CONTEXT,

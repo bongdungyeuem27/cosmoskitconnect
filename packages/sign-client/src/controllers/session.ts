@@ -1,8 +1,8 @@
-import { Store } from "@walletconnect/core";
-import { Logger } from "@walletconnect/logger";
-import { ICore, SessionTypes } from "@walletconnect/types";
+import { Store } from "@cosmoskitconnect/core";
+import { Logger } from "@cosmoskitconnect/logger";
+import { ICore, SessionTypes } from "@cosmoskitconnect/types";
 
-import { SIGN_CLIENT_STORAGE_PREFIX, SESSION_CONTEXT } from "../constants";
+import { SESSION_CONTEXT, SIGN_CLIENT_STORAGE_PREFIX } from "../constants";
 
 export class Session extends Store<string, SessionTypes.Struct> {
   constructor(public core: ICore, public logger: Logger) {

@@ -1,17 +1,17 @@
 import {
   ErrorResponse,
+  JsonRpcError,
   JsonRpcRequest,
   JsonRpcResponse,
   JsonRpcResult,
-  JsonRpcError,
-} from "@walletconnect/jsonrpc-types";
+} from "@cosmoskitconnect/jsonrpc-types";
 import EventEmitter from "events";
 
-import { ICore, CoreTypes } from "./core";
+import { CoreTypes, ICore } from "./core";
 import { IStore } from "./store";
 
+import { Logger } from "@cosmoskitconnect/logger";
 import { RelayerTypes } from "../core/relayer";
-import { Logger } from "@walletconnect/logger";
 
 export declare namespace PairingTypes {
   interface Struct {

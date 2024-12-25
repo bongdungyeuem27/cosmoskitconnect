@@ -1,4 +1,4 @@
-import { SignClientTypes } from "@walletconnect/types";
+import { SignClientTypes } from "@cosmoskitconnect/types";
 
 export const SIGN_CLIENT_PROTOCOL = "wc";
 export const SIGN_CLIENT_VERSION = 2;
@@ -32,4 +32,4 @@ export const SIGN_CLIENT_STORAGE_OPTIONS = {
   database: ":memory:",
 };
 
-export const WALLETCONNECT_DEEPLINK_CHOICE = "WALLETCONNECT_DEEPLINK_CHOICE";
+export const WALLETCONNECT_DEEPLINK_CHOICE = "cosmos-kit@2:WALLETCONNECT_DEEPLINK_CHOICE";

@@ -1,4 +1,4 @@
-# @walletconnect/sign-client
+# @cosmoskitconnect/sign-client
 
 Sign Client for WalletConnect Protocol
 

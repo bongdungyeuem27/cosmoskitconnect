@@ -1,0 +1,65 @@
+{
+  "name": "@cosmoskitconnect/history",
+  "version": "1.0.5",
+  "description": "Utilities for communicating with history server",
+  "keywords": [
+    "history",
+    "web3",
+    "utils"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:pre": "bun run clean",
+    "build:types": "tsc",
+    "build:source": "rollup --config rollup.config.js",
+    "build": "bun run build:pre && bun run build:source && bun run build:types",
+    "test": "env TS_NODE_PROJECT=\"tsconfig.cjs.json\" mocha --timeout 20000 --exit -r ts-node/register ./test/**/*.test.ts",
+    "lint": "eslint -c '../../.eslintrc' --fix './src/**/*.ts'",
+    "bun-publish:latest": "bun publish --access public --tag latest",
+    "bun-publish:canary": "bun publish --access public --tag canary",
+    "prepublishOnly": "bun run test && bun run build",
+    "prettier": "prettier --config ../../.prettierrc --check {src,test}/**/*.ts",
+    "format": "prettier --config ../../.prettierrc --write {src,test}/**/*.ts"
+  },
+  "author": "WalletConnect, Inc. <walletconnect.com>",
+  "homepage": "https://github.com/walletconnect/walletconnect-utils",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "browser": "dist/index.es.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walletconnect/walletconnect-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/walletconnect/walletconnect-utils/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@cosmoskitconnect/core": "workspace:*",
+    "@cosmoskitconnect/events": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-utils": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-types": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-provider": "workspace:*",
+    "@cosmoskitconnect/keyvaluestorage": "workspace:*",
+    "@cosmoskitconnect/logger": "workspace:*",
+    "@cosmoskitconnect/relay-api": "workspace:*",
+    "@cosmoskitconnect/relay-auth": "workspace:*",
+    "@cosmoskitconnect/safe-json": "workspace:*",
+    "@cosmoskitconnect/time": "workspace:*",
+    "@cosmoskitconnect/types": "workspace:*",
+    "@cosmoskitconnect/window-getters": "workspace:*",
+    "@cosmoskitconnect/window-metadata": "workspace:*",
+    "lokijs": "^1.5.12"
+  },
+  "dependencies": {
+    "@ethersproject/hash": "^5.7.0",
+    "@ethersproject/transactions": "^5.7.0",
+    "@cosmoskitconnect/utils": "workspace:*",
+    "isomorphic-unfetch": "^3.1.0"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "name": "walletconnect-monorepo",
+  "name": "cosmoskitconnect",
   "description": "Monorepo for WalletConnect",
   "private": true,
   "keywords": [
@@ -17,32 +17,21 @@
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "homepage": "https://github.com/walletconnect/walletconnect-monorepo/",
   "license": "Apache-2.0",
-  "workspaces": [
-    "packages/types",
-    "packages/utils",
-    "packages/core",
-    "packages/sign-client",
-    "packages/web3wallet",
-    "packages/react-native-compat",
-    "providers/universal-provider",
-    "providers/signer-connection",
-    "providers/ethereum-provider"
-  ],
   "scripts": {
-    "clean": "npm run clean --workspaces --if-present",
-    "lint": "npm run lint --workspaces --if-present",
-    "prettier": "npm run prettier --workspaces --if-present",
-    "build": "npm run build --workspaces --if-present",
-    "test": "npm run test --workspaces --if-present",
-    "test:ignoreUnhandled": "npm run test:ignoreUnhandled --workspaces --if-present",
-    "check": "npm run lint; npm run build; npm run test",
-    "reset": "npm run clean; npm run check",
+    "clean": "bun run clean --workspaces --if-present",
+    "lint": "bun run lint --workspaces --if-present",
+    "build": "lerna run prepare --stream",
+    "prettier": "bun run prettier --workspaces --if-present",
+    "test": "bun run test --workspaces --if-present",
+    "test:ignoreUnhandled": "bun run test:ignoreUnhandled --workspaces --if-present",
+    "check": "bun run lint; bun run build; bun run test",
+    "reset": "bun run clean; bun run check",
     "new-version": "lerna version --no-private --no-git-tag-version --exact && ./scripts/update_relayer_sdk_version.sh",
-    "pre-publish": "npm run new-version; npm run reset",
-    "npm-publish:rc": "lerna exec --no-private -- npm publish --access public --tag rc",
-    "npm-publish:latest": "lerna exec --no-private -- npm publish --access public --tag latest",
-    "npm-publish:next": "lerna exec --no-private -- npm publish --access public --tag next",
-    "npm-publish:canary": "lerna exec --no-private -- npm publish --access public --tag canary"
+    "pre-publish": "bun run new-version; bun run reset",
+    "bun-publish:rc": "lerna exec --no-private -- bun publish --access public --tag rc",
+    "bun-publish:latest": "lerna exec --no-private -- bun publish --access public --tag latest",
+    "bun-publish:next": "lerna exec --no-private -- bun publish --access public --tag next",
+    "bun-publish:canary": "lerna exec --no-private -- bun publish --access public --tag canary"
   },
   "repository": {
     "type": "git",
@@ -75,7 +64,10 @@
     "rollup": "2.78.0",
     "rollup-plugin-esbuild": "4.9.3",
     "sinon": "14.0.0",
-    "typescript": "4.7.4",
+    "typescript": "4.9.5",
     "vitest": "0.22.1"
-  }
+  },
+  "workspaces":[
+    "packages/*"
+  ]
 }

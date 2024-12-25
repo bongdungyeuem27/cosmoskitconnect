@@ -1,6 +1,6 @@
+import { AuthTypes } from "@cosmoskitconnect/types";
 import { hashMessage } from "@ethersproject/hash";
 import { recoverAddress } from "@ethersproject/transactions";
-import { AuthTypes } from "@walletconnect/types";
 import { parseChainId } from "./caip";
 const DEFAULT_RPC_URL = "https://rpc.walletconnect.org/v1";
 

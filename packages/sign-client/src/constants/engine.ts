@@ -1,5 +1,5 @@
-import { FIVE_MINUTES, ONE_DAY, ONE_HOUR, SEVEN_DAYS } from "@walletconnect/time";
-import { EngineTypes } from "@walletconnect/types";
+import { FIVE_MINUTES, ONE_DAY, ONE_HOUR, SEVEN_DAYS } from "@cosmoskitconnect/time";
+import { EngineTypes } from "@cosmoskitconnect/types";
 
 export const ENGINE_CONTEXT = "engine";
 

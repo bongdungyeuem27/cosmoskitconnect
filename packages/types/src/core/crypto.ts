@@ -1,5 +1,5 @@
-import { JsonRpcPayload } from "@walletconnect/jsonrpc-types";
-import { Logger } from "@walletconnect/logger";
+import { JsonRpcPayload } from "@cosmoskitconnect/jsonrpc-types";
+import { Logger } from "@cosmoskitconnect/logger";
 import { ICore } from "./core";
 import { IKeyChain } from "./keychain";
 

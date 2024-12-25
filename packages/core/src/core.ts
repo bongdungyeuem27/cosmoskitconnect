@@ -1,15 +1,15 @@
 import { EventEmitter } from "events";
 
-import { HeartBeat } from "@walletconnect/heartbeat";
-import KeyValueStorage from "@walletconnect/keyvaluestorage";
+import { HeartBeat } from "@cosmoskitconnect/heartbeat";
+import KeyValueStorage from "@cosmoskitconnect/keyvaluestorage";
 import {
   ChunkLoggerController,
   generateChildLogger,
   generatePlatformLogger,
   getDefaultLoggerOptions,
   getLoggerContext,
-} from "@walletconnect/logger";
-import { CoreTypes, ICore } from "@walletconnect/types";
+} from "@cosmoskitconnect/logger";
+import { CoreTypes, ICore } from "@cosmoskitconnect/types";
 
 import {
   CORE_CONTEXT,

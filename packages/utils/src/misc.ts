@@ -1,15 +1,15 @@
-import { detect } from "detect-browser";
-import { FIVE_MINUTES, fromMiliseconds, toMiliseconds } from "@walletconnect/time";
+import { ErrorResponse } from "@cosmoskitconnect/jsonrpc-utils";
+import { IKeyValueStorage } from "@cosmoskitconnect/keyvaluestorage";
+import { FIVE_MINUTES, fromMiliseconds, toMiliseconds } from "@cosmoskitconnect/time";
 import {
-  SignClientTypes,
-  RelayerClientMetadata,
   EngineTypes,
+  RelayerClientMetadata,
   RelayerTypes,
-} from "@walletconnect/types";
-import { getDocument, getLocation, getNavigator } from "@walletconnect/window-getters";
-import { getWindowMetadata } from "@walletconnect/window-metadata";
-import { ErrorResponse } from "@walletconnect/jsonrpc-utils";
-import { IKeyValueStorage } from "@walletconnect/keyvaluestorage";
+  SignClientTypes,
+} from "@cosmoskitconnect/types";
+import { getDocument, getLocation, getNavigator } from "@cosmoskitconnect/window-getters";
+import { getWindowMetadata } from "@cosmoskitconnect/window-metadata";
+import { detect } from "detect-browser";
 import * as qs from "query-string";
 
 // -- constants -----------------------------------------//

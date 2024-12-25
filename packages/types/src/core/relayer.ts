@@ -1,6 +1,10 @@
-import { IEvents } from "@walletconnect/events";
-import { IJsonRpcProvider, JsonRpcPayload, RequestArguments } from "@walletconnect/jsonrpc-types";
-import { Logger } from "@walletconnect/logger";
+import { IEvents } from "@cosmoskitconnect/events";
+import {
+  IJsonRpcProvider,
+  JsonRpcPayload,
+  RequestArguments,
+} from "@cosmoskitconnect/jsonrpc-types";
+import { Logger } from "@cosmoskitconnect/logger";
 
 import { ICore } from "./core";
 import { IMessageTracker } from "./messages";

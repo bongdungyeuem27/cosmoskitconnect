@@ -1,3 +1,3 @@
-# @walletconnect/types
+# @cosmoskitconnect/types
 
 Typings for WalletConnect Protocol

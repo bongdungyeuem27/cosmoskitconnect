@@ -1,13 +1,13 @@
-import { Logger } from "@walletconnect/logger";
+import { Logger } from "@cosmoskitconnect/logger";
 import EventEmmiter from "events";
+import { RelayerTypes } from "../core";
 import { CoreTypes, ICore } from "../core/core";
+import { Verify } from "../core/verify";
+import { AuthTypes, IAuth } from "./auth";
 import { IEngine } from "./engine";
 import { IPendingRequest } from "./pendingRequest";
 import { IProposal, ProposalTypes } from "./proposal";
 import { ISession, SessionTypes } from "./session";
-import { Verify } from "../core/verify";
-import { IAuth, AuthTypes } from "./auth";
-import { RelayerTypes } from "../core";
 
 export declare namespace SignClientTypes {
   type Event =

@@ -1,4 +1,4 @@
-import { ONE_DAY } from "@walletconnect/time";
+import { ONE_DAY } from "@cosmoskitconnect/time";
 
 export const EXPIRER_CONTEXT = "expirer";
 

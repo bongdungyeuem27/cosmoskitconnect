@@ -1,6 +1,6 @@
-import { generateChildLogger, getLoggerContext, Logger } from "@walletconnect/logger";
-import { ICore, IMessageTracker, MessageRecord } from "@walletconnect/types";
-import { hashMessage, mapToObj, objToMap, getInternalError } from "@walletconnect/utils";
+import { generateChildLogger, getLoggerContext, Logger } from "@cosmoskitconnect/logger";
+import { ICore, IMessageTracker, MessageRecord } from "@cosmoskitconnect/types";
+import { getInternalError, hashMessage, mapToObj, objToMap } from "@cosmoskitconnect/utils";
 import { CORE_STORAGE_PREFIX, MESSAGES_CONTEXT, MESSAGES_STORAGE_VERSION } from "../constants";
 
 export class MessageTracker extends IMessageTracker {

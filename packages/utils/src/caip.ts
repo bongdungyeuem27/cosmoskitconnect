@@ -1,4 +1,4 @@
-import { SessionTypes, ProposalTypes } from "@walletconnect/types";
+import { ProposalTypes, SessionTypes } from "@cosmoskitconnect/types";
 
 interface ChainIdParams {
   namespace: string;

@@ -1,4 +1,4 @@
-# @walletconnect/core
+# @cosmoskitconnect/core
 
 Core for WalletConnect Protocol
 

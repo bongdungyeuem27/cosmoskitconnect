@@ -1,53 +1,53 @@
-import { generateChildLogger, getLoggerContext, Logger } from "@walletconnect/logger";
 import {
-  ICore,
-  PairingTypes,
-  IPairing,
-  IPairingPrivate,
-  IStore,
-  RelayerTypes,
-  PairingJsonRpcTypes,
-  ExpirerTypes,
-  EventClientTypes,
-} from "@walletconnect/types";
-import {
-  getInternalError,
-  parseUri,
-  calcExpiry,
-  generateRandomBytes32,
-  formatUri,
-  getSdkError,
-  engineEvent,
-  createDelayedPromise,
-  isValidParams,
-  isValidUrl,
-  isValidString,
-  isExpired,
-  parseExpirerTarget,
-  TYPE_1,
-} from "@walletconnect/utils";
-import {
+  formatJsonRpcError,
   formatJsonRpcRequest,
   formatJsonRpcResult,
-  formatJsonRpcError,
+  isJsonRpcError,
   isJsonRpcRequest,
   isJsonRpcResponse,
   isJsonRpcResult,
-  isJsonRpcError,
-} from "@walletconnect/jsonrpc-utils";
-import { FIVE_MINUTES, THIRTY_DAYS, toMiliseconds } from "@walletconnect/time";
+} from "@cosmoskitconnect/jsonrpc-utils";
+import { generateChildLogger, getLoggerContext, Logger } from "@cosmoskitconnect/logger";
+import { FIVE_MINUTES, THIRTY_DAYS, toMiliseconds } from "@cosmoskitconnect/time";
+import {
+  EventClientTypes,
+  ExpirerTypes,
+  ICore,
+  IPairing,
+  IPairingPrivate,
+  IStore,
+  PairingJsonRpcTypes,
+  PairingTypes,
+  RelayerTypes,
+} from "@cosmoskitconnect/types";
+import {
+  calcExpiry,
+  createDelayedPromise,
+  engineEvent,
+  formatUri,
+  generateRandomBytes32,
+  getInternalError,
+  getSdkError,
+  isExpired,
+  isValidParams,
+  isValidString,
+  isValidUrl,
+  parseExpirerTarget,
+  parseUri,
+  TYPE_1,
+} from "@cosmoskitconnect/utils";
 import EventEmitter from "events";
 import {
-  PAIRING_CONTEXT,
-  PAIRING_STORAGE_VERSION,
   CORE_STORAGE_PREFIX,
-  RELAYER_DEFAULT_PROTOCOL,
-  PAIRING_RPC_OPTS,
-  RELAYER_EVENTS,
-  EXPIRER_EVENTS,
-  PAIRING_EVENTS,
-  EVENT_CLIENT_PAIRING_TRACES,
   EVENT_CLIENT_PAIRING_ERRORS,
+  EVENT_CLIENT_PAIRING_TRACES,
+  EXPIRER_EVENTS,
+  PAIRING_CONTEXT,
+  PAIRING_EVENTS,
+  PAIRING_RPC_OPTS,
+  PAIRING_STORAGE_VERSION,
+  RELAYER_DEFAULT_PROTOCOL,
+  RELAYER_EVENTS,
   TRANSPORT_TYPES,
 } from "../constants";
 import { Store } from "../controllers/store";

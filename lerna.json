@@ -1,8 +1,24 @@
 {
-  "npmClient": "npm",
-  "packages": [
-    "packages/*",
-    "providers/*"
+  "lerna": "7",
+  "conventionalCommits": true,
+  "npmClient": "bun",
+  "npmClientArgs": [
+    "--no-lockfile"
   ],
-  "version": "2.17.3"
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "registry": "https://registry.npmjs.org",
+  "command": {
+    "create": {
+      "homepage": "https://github.com/bongdungyeuem27/cosmos-kit",
+      "license": "SEE LICENSE IN LICENSE",
+      "access": "public"
+    },
+    "publish": {
+      "allowBranch": "main",
+      "message": "chore(release): publish"
+    }
+  }
 }

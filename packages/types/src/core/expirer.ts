@@ -1,5 +1,5 @@
-import { IEvents } from "@walletconnect/events";
-import { Logger } from "@walletconnect/logger";
+import { IEvents } from "@cosmoskitconnect/events";
+import { Logger } from "@cosmoskitconnect/logger";
 
 import { ICore } from "./core";
 

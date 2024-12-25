@@ -1,32 +1,32 @@
-import { EventEmitter } from "events";
-import { HEARTBEAT_EVENTS } from "@walletconnect/heartbeat";
-import { ErrorResponse, RequestArguments } from "@walletconnect/jsonrpc-types";
-import { generateChildLogger, getLoggerContext, Logger } from "@walletconnect/logger";
-import { RelayJsonRpc } from "@walletconnect/relay-api";
-import { ONE_SECOND, ONE_MINUTE, Watch, toMiliseconds } from "@walletconnect/time";
+import { HEARTBEAT_EVENTS } from "@cosmoskitconnect/heartbeat";
+import { ErrorResponse, RequestArguments } from "@cosmoskitconnect/jsonrpc-types";
+import { generateChildLogger, getLoggerContext, Logger } from "@cosmoskitconnect/logger";
+import { RelayJsonRpc } from "@cosmoskitconnect/relay-api";
+import { ONE_MINUTE, ONE_SECOND, toMiliseconds, Watch } from "@cosmoskitconnect/time";
 import {
   IRelayer,
   ISubscriber,
   RelayerTypes,
   SubscriberEvents,
   SubscriberTypes,
-} from "@walletconnect/types";
+} from "@cosmoskitconnect/types";
 import {
-  getSdkError,
+  createExpiringPromise,
   getInternalError,
   getRelayProtocolApi,
   getRelayProtocolName,
-  createExpiringPromise,
+  getSdkError,
   hashMessage,
   sleep,
-} from "@walletconnect/utils";
+} from "@cosmoskitconnect/utils";
+import { EventEmitter } from "events";
 import {
   CORE_STORAGE_PREFIX,
+  PENDING_SUB_RESOLUTION_TIMEOUT,
+  RELAYER_EVENTS,
   SUBSCRIBER_CONTEXT,
   SUBSCRIBER_EVENTS,
   SUBSCRIBER_STORAGE_VERSION,
-  PENDING_SUB_RESOLUTION_TIMEOUT,
-  RELAYER_EVENTS,
   TRANSPORT_TYPES,
 } from "../constants";
 import { SubscriberTopicMap } from "./topicmap";

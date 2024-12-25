@@ -1,6 +1,6 @@
-import { Store } from "@walletconnect/core";
-import { Logger } from "@walletconnect/logger";
-import { ICore } from "@walletconnect/types";
+import { Store } from "@cosmoskitconnect/core";
+import { Logger } from "@cosmoskitconnect/logger";
+import { ICore } from "@cosmoskitconnect/types";
 
 import { AUTH_PAIRING_TOPIC_CONTEXT, AUTH_STORAGE_PREFIX } from "../constants";
 

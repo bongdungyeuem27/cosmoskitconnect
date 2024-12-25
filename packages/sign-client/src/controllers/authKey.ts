@@ -1,8 +1,8 @@
-import { Store } from "@walletconnect/core";
-import { Logger } from "@walletconnect/logger";
-import { ICore } from "@walletconnect/types";
+import { Store } from "@cosmoskitconnect/core";
+import { Logger } from "@cosmoskitconnect/logger";
+import { ICore } from "@cosmoskitconnect/types";
 
-import { AUTH_KEYS_CONTEXT, AUTH_STORAGE_PREFIX, AUTH_PUBLIC_KEY_NAME } from "../constants";
+import { AUTH_KEYS_CONTEXT, AUTH_PUBLIC_KEY_NAME, AUTH_STORAGE_PREFIX } from "../constants";
 
 export class AuthKey extends Store<string, { responseTopic: string; publicKey: string }> {
   constructor(public core: ICore, public logger: Logger) {

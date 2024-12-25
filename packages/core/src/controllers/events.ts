@@ -1,6 +1,8 @@
-import { generateChildLogger, Logger } from "@walletconnect/logger";
-import { ICore, IEventClient, EventClientTypes } from "@walletconnect/types";
-import { formatUA, isTestRun, uuidv4, getAppMetadata } from "@walletconnect/utils";
+import { HEARTBEAT_EVENTS } from "@cosmoskitconnect/heartbeat";
+import { generateChildLogger, Logger } from "@cosmoskitconnect/logger";
+import { fromMiliseconds } from "@cosmoskitconnect/time";
+import { EventClientTypes, ICore, IEventClient } from "@cosmoskitconnect/types";
+import { formatUA, getAppMetadata, isTestRun, uuidv4 } from "@cosmoskitconnect/utils";
 import {
   CORE_STORAGE_PREFIX,
   EVENTS_CLIENT_API_URL,
@@ -9,8 +11,6 @@ import {
   EVENTS_STORAGE_VERSION,
   RELAYER_SDK_VERSION,
 } from "../constants";
-import { HEARTBEAT_EVENTS } from "@walletconnect/heartbeat";
-import { fromMiliseconds } from "@walletconnect/time";
 
 export class EventClient extends IEventClient {
   public readonly context = EVENTS_STORAGE_CONTEXT;

@@ -1,5 +1,5 @@
+import { EngineTypes, RelayerTypes } from "@cosmoskitconnect/types";
 import * as qs from "query-string";
-import { EngineTypes, RelayerTypes } from "@walletconnect/types";
 import { fromBase64 } from "./misc";
 
 // -- uri -------------------------------------------------- //

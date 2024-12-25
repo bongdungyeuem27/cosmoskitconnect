@@ -1,4 +1,4 @@
-import { THIRTY_DAYS } from "@walletconnect/time";
+import { THIRTY_DAYS } from "@cosmoskitconnect/time";
 
 export const PROPOSAL_CONTEXT = "proposal";
 

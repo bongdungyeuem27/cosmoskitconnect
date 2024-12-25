@@ -1,17 +1,17 @@
-import { IEvents } from "@walletconnect/events";
-import { IHeartBeat } from "@walletconnect/heartbeat";
-import { IKeyValueStorage, KeyValueStorageOptions } from "@walletconnect/keyvaluestorage";
+import { IEvents } from "@cosmoskitconnect/events";
+import { IHeartBeat } from "@cosmoskitconnect/heartbeat";
+import { IKeyValueStorage, KeyValueStorageOptions } from "@cosmoskitconnect/keyvaluestorage";
 
+import { Logger } from "@cosmoskitconnect/logger";
 import { ICrypto } from "./crypto";
-import { IRelayer } from "./relayer";
-import { IKeyChain } from "./keychain";
-import { IJsonRpcHistory } from "./history";
-import { IExpirer } from "./expirer";
-import { IPairing } from "./pairing";
-import { Logger } from "@walletconnect/logger";
-import { IVerify } from "./verify";
 import { IEchoClient } from "./echo";
 import { IEventClient } from "./events";
+import { IExpirer } from "./expirer";
+import { IJsonRpcHistory } from "./history";
+import { IKeyChain } from "./keychain";
+import { IPairing } from "./pairing";
+import { IRelayer } from "./relayer";
+import { IVerify } from "./verify";
 export declare namespace CoreTypes {
   interface Options {
     projectId?: string;

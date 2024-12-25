@@ -1,19 +1,19 @@
-import { HEARTBEAT_EVENTS } from "@walletconnect/heartbeat";
-import { JsonRpcPayload, RequestArguments } from "@walletconnect/jsonrpc-types";
-import { generateChildLogger, getLoggerContext, Logger } from "@walletconnect/logger";
-import { RelayJsonRpc } from "@walletconnect/relay-api";
-import { IPublisher, IRelayer, PublisherTypes } from "@walletconnect/types";
+import { HEARTBEAT_EVENTS } from "@cosmoskitconnect/heartbeat";
+import { JsonRpcPayload, RequestArguments } from "@cosmoskitconnect/jsonrpc-types";
+import { generateChildLogger, getLoggerContext, Logger } from "@cosmoskitconnect/logger";
+import { RelayJsonRpc } from "@cosmoskitconnect/relay-api";
+import { IPublisher, IRelayer, PublisherTypes } from "@cosmoskitconnect/types";
 import {
+  createExpiringPromise,
   getRelayProtocolApi,
   getRelayProtocolName,
   isUndefined,
-  createExpiringPromise,
-} from "@walletconnect/utils";
+} from "@cosmoskitconnect/utils";
 import { EventEmitter } from "events";
 
+import { getBigIntRpcId } from "@cosmoskitconnect/jsonrpc-utils";
+import { ONE_MINUTE, ONE_SECOND, toMiliseconds } from "@cosmoskitconnect/time";
 import { PUBLISHER_CONTEXT, PUBLISHER_DEFAULT_TTL, RELAYER_EVENTS } from "../constants";
-import { getBigIntRpcId } from "@walletconnect/jsonrpc-utils";
-import { ONE_MINUTE, ONE_SECOND, toMiliseconds } from "@walletconnect/time";
 
 type IPublishType = PublisherTypes.Params & {
   attestation?: string;

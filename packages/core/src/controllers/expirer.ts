@@ -1,8 +1,8 @@
-import { HEARTBEAT_EVENTS } from "@walletconnect/heartbeat";
-import { generateChildLogger, getLoggerContext, Logger } from "@walletconnect/logger";
-import { toMiliseconds } from "@walletconnect/time";
-import { ExpirerTypes, ICore, IExpirer } from "@walletconnect/types";
-import { getInternalError, formatIdTarget, formatTopicTarget } from "@walletconnect/utils";
+import { HEARTBEAT_EVENTS } from "@cosmoskitconnect/heartbeat";
+import { generateChildLogger, getLoggerContext, Logger } from "@cosmoskitconnect/logger";
+import { toMiliseconds } from "@cosmoskitconnect/time";
+import { ExpirerTypes, ICore, IExpirer } from "@cosmoskitconnect/types";
+import { formatIdTarget, formatTopicTarget, getInternalError } from "@cosmoskitconnect/utils";
 import { EventEmitter } from "events";
 import {
   CORE_STORAGE_PREFIX,

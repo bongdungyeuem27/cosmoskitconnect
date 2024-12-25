@@ -1,5 +1,5 @@
-import { ErrorResponse } from "@walletconnect/jsonrpc-types";
-import { Logger } from "@walletconnect/logger";
+import { ErrorResponse } from "@cosmoskitconnect/jsonrpc-types";
+import { Logger } from "@cosmoskitconnect/logger";
 import { ICore } from "./core";
 
 export abstract class IStore<Key, Value> {

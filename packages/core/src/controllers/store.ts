@@ -1,13 +1,13 @@
-import { generateChildLogger, getLoggerContext, Logger } from "@walletconnect/logger";
-import { ICore, IStore } from "@walletconnect/types";
+import { generateChildLogger, getLoggerContext, Logger } from "@cosmoskitconnect/logger";
+import { ICore, IStore } from "@cosmoskitconnect/types";
 import {
   getInternalError,
   isProposalStruct,
   isSessionStruct,
   isUndefined,
-} from "@walletconnect/utils";
-import { CORE_STORAGE_PREFIX, STORE_STORAGE_VERSION } from "../constants";
+} from "@cosmoskitconnect/utils";
 import isEqual from "lodash.isequal";
+import { CORE_STORAGE_PREFIX, STORE_STORAGE_VERSION } from "../constants";
 
 export class Store<Key, Data extends Record<string, any>> extends IStore<Key, Data> {
   public map = new Map<Key, Data>();

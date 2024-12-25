@@ -1,5 +1,5 @@
-import { RELAY_JSONRPC } from "@walletconnect/relay-api";
-import { RelayerTypes } from "@walletconnect/types";
+import { RELAY_JSONRPC } from "@cosmoskitconnect/relay-api";
+import { RelayerTypes } from "@cosmoskitconnect/types";
 
 export const RELAYER_DEFAULT_PROTOCOL = "irn";
 

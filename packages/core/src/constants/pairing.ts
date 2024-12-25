@@ -1,5 +1,5 @@
-import { THIRTY_DAYS, ONE_DAY, THIRTY_SECONDS } from "@walletconnect/time";
-import { RelayerTypes, PairingJsonRpcTypes } from "@walletconnect/types";
+import { ONE_DAY, THIRTY_DAYS, THIRTY_SECONDS } from "@cosmoskitconnect/time";
+import { PairingJsonRpcTypes, RelayerTypes } from "@cosmoskitconnect/types";
 
 export const PAIRING_CONTEXT = "pairing";
 

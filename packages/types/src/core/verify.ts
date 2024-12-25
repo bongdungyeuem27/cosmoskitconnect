@@ -1,5 +1,5 @@
-import { Logger } from "@walletconnect/logger";
-import { IKeyValueStorage } from "@walletconnect/keyvaluestorage";
+import { IKeyValueStorage } from "@cosmoskitconnect/keyvaluestorage";
+import { Logger } from "@cosmoskitconnect/logger";
 import { ICore } from "./core";
 
 export declare namespace Verify {

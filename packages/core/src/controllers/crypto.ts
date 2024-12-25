@@ -1,30 +1,30 @@
-import { generateChildLogger, getLoggerContext, Logger } from "@walletconnect/logger";
-import { safeJsonParse, safeJsonStringify } from "@walletconnect/safe-json";
-import { ICore, ICrypto, IKeyChain } from "@walletconnect/types";
-import * as relayAuth from "@walletconnect/relay-auth";
-import { fromString } from "uint8arrays/from-string";
+import { generateChildLogger, getLoggerContext, Logger } from "@cosmoskitconnect/logger";
+import * as relayAuth from "@cosmoskitconnect/relay-auth";
+import { safeJsonParse, safeJsonStringify } from "@cosmoskitconnect/safe-json";
+import { ICore, ICrypto, IKeyChain } from "@cosmoskitconnect/types";
 import {
-  decrypt,
-  deriveSymKey,
-  encrypt,
-  generateKeyPair as generateKeyPairUtil,
-  hashKey,
-  getInternalError,
-  generateRandomBytes32,
-  validateEncoding,
-  validateDecoding,
-  isTypeOneEnvelope,
-  isTypeTwoEnvelope,
-  encodeTypeTwoEnvelope,
-  decodeTypeTwoEnvelope,
-  deserialize,
-  decodeTypeByte,
   BASE16,
   BASE64,
-} from "@walletconnect/utils";
+  decodeTypeByte,
+  decodeTypeTwoEnvelope,
+  decrypt,
+  deriveSymKey,
+  deserialize,
+  encodeTypeTwoEnvelope,
+  encrypt,
+  generateKeyPair as generateKeyPairUtil,
+  generateRandomBytes32,
+  getInternalError,
+  hashKey,
+  isTypeOneEnvelope,
+  isTypeTwoEnvelope,
+  validateDecoding,
+  validateEncoding,
+} from "@cosmoskitconnect/utils";
 import { toString } from "uint8arrays";
+import { fromString } from "uint8arrays/from-string";
 
-import { CRYPTO_CONTEXT, CRYPTO_CLIENT_SEED, CRYPTO_JWT_TTL } from "../constants";
+import { CRYPTO_CLIENT_SEED, CRYPTO_CONTEXT, CRYPTO_JWT_TTL } from "../constants";
 import { KeyChain } from "./keychain";
 
 export class Crypto implements ICrypto {
