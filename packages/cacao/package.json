@@ -45,5 +45,6 @@
     "@ethersproject/hash": "^5.7.0",
     "@ethersproject/transactions": "^5.7.0",
     "isomorphic-unfetch": "^3.1.0"
-  }
+  },
+  "gitHead": "97d8ea7026181bcfc2e5bacee623d968528c9f71"
 }

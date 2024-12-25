@@ -54,10 +54,11 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "@cosmoskitconnect/safe-json": "workspace:*",
-    "@cosmoskitconnect/time": "workspace:*",
+    "@cosmoskitconnect/safe-json": "0.1.2",
+    "@cosmoskitconnect/time": "0.1.2",
     "@stablelib/ed25519": "^1.0.2",
     "@stablelib/random": "^1.0.1",
     "uint8arrays": "^3.0.0"
-  }
+  },
+  "gitHead": "97d8ea7026181bcfc2e5bacee623d968528c9f71"
 }

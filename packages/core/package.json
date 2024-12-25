@@ -33,20 +33,20 @@
     "prettier": "prettier --check '{src,test}/**/*.{js,ts,jsx,tsx}'"
   },
   "dependencies": {
-    "@cosmoskitconnect/heartbeat": "workspace:*",
-    "@cosmoskitconnect/jsonrpc-provider": "workspace:*",
-    "@cosmoskitconnect/jsonrpc-types": "workspace:*",
-    "@cosmoskitconnect/jsonrpc-utils": "workspace:*",
-    "@cosmoskitconnect/jsonrpc-ws-connection": "workspace:*",
-    "@cosmoskitconnect/keyvaluestorage": "workspace:*",
-    "@cosmoskitconnect/logger": "workspace:*",
-    "@cosmoskitconnect/relay-api": "workspace:*",
-    "@cosmoskitconnect/relay-auth": "workspace:*",
-    "@cosmoskitconnect/safe-json": "workspace:*",
-    "@cosmoskitconnect/time": "workspace:*",
-    "@cosmoskitconnect/types": "workspace:*",
-    "@cosmoskitconnect/utils": "workspace:*",
-    "@cosmoskitconnect/window-getters": "workspace:*",
+    "@cosmoskitconnect/heartbeat": "0.1.2",
+    "@cosmoskitconnect/jsonrpc-provider": "0.1.2",
+    "@cosmoskitconnect/jsonrpc-types": "0.1.2",
+    "@cosmoskitconnect/jsonrpc-utils": "0.1.2",
+    "@cosmoskitconnect/jsonrpc-ws-connection": "0.1.2",
+    "@cosmoskitconnect/keyvaluestorage": "0.1.2",
+    "@cosmoskitconnect/logger": "0.1.2",
+    "@cosmoskitconnect/relay-api": "0.1.2",
+    "@cosmoskitconnect/relay-auth": "0.1.2",
+    "@cosmoskitconnect/safe-json": "0.1.2",
+    "@cosmoskitconnect/time": "0.1.2",
+    "@cosmoskitconnect/types": "0.1.2",
+    "@cosmoskitconnect/utils": "0.1.2",
+    "@cosmoskitconnect/window-getters": "0.1.2",
     "events": "3.3.0",
     "lodash.isequal": "4.5.0",
     "uint8arrays": "3.1.0"
@@ -56,5 +56,6 @@
   },
   "engines": {
     "node": ">=18"
-  }
+  },
+  "gitHead": "97d8ea7026181bcfc2e5bacee623d968528c9f71"
 }

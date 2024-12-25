@@ -43,8 +43,8 @@
     "format": "prettier --config ../../.prettierrc --write {src,test}/**/*.ts"
   },
   "dependencies": {
-    "@cosmoskitconnect/encoding": "workspace:*",
-    "@cosmoskitconnect/environment": "workspace:*",
+    "@cosmoskitconnect/encoding": "0.1.2",
+    "@cosmoskitconnect/environment": "0.1.2",
     "randombytes": "^2.1.0",
     "tslib": "1.14.1"
   },
@@ -61,5 +61,6 @@
     "mocha": "^8.1.3",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
-  }
+  },
+  "gitHead": "97d8ea7026181bcfc2e5bacee623d968528c9f71"
 }

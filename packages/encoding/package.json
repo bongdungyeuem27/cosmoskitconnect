@@ -58,5 +58,6 @@
   "dependencies": {
     "is-typedarray": "1.0.0",
     "typedarray-to-buffer": "4.0.0"
-  }
+  },
+  "gitHead": "97d8ea7026181bcfc2e5bacee623d968528c9f71"
 }

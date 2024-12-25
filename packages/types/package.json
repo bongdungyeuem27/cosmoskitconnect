@@ -29,11 +29,12 @@
     "prettier": "prettier --check 'src/**/*.{js,ts,jsx,tsx}'"
   },
   "dependencies": {
-    "@cosmoskitconnect/events": "workspace:*",
-    "@cosmoskitconnect/heartbeat": "workspace:*",
-    "@cosmoskitconnect/jsonrpc-types": "workspace:*",
-    "@cosmoskitconnect/keyvaluestorage": "workspace:*",
-    "@cosmoskitconnect/logger": "workspace:*",
+    "@cosmoskitconnect/events": "0.1.2",
+    "@cosmoskitconnect/heartbeat": "0.1.2",
+    "@cosmoskitconnect/jsonrpc-types": "0.1.2",
+    "@cosmoskitconnect/keyvaluestorage": "0.1.2",
+    "@cosmoskitconnect/logger": "0.1.2",
     "events": "3.3.0"
-  }
+  },
+  "gitHead": "97d8ea7026181bcfc2e5bacee623d968528c9f71"
 }

@@ -40,20 +40,21 @@
     "prettier": "prettier --check '{src,test}/**/*.{js,ts,jsx,tsx}'"
   },
   "dependencies": {
-    "@cosmoskitconnect/core": "workspace:*",
-    "@cosmoskitconnect/events": "workspace:*",
-    "@cosmoskitconnect/heartbeat": "workspace:*",
-    "@cosmoskitconnect/jsonrpc-utils": "workspace:*",
-    "@cosmoskitconnect/logger": "workspace:*",
-    "@cosmoskitconnect/time": "workspace:*",
-    "@cosmoskitconnect/types": "workspace:*",
-    "@cosmoskitconnect/utils": "workspace:*",
+    "@cosmoskitconnect/core": "0.1.2",
+    "@cosmoskitconnect/events": "0.1.2",
+    "@cosmoskitconnect/heartbeat": "0.1.2",
+    "@cosmoskitconnect/jsonrpc-utils": "0.1.2",
+    "@cosmoskitconnect/logger": "0.1.2",
+    "@cosmoskitconnect/time": "0.1.2",
+    "@cosmoskitconnect/types": "0.1.2",
+    "@cosmoskitconnect/utils": "0.1.2",
     "events": "3.3.0"
   },
   "devDependencies": {
     "@aws-sdk/client-cloudwatch": "3.450.0",
-    "@cosmoskitconnect/jsonrpc-provider": "workspace:*",
-    "@cosmoskitconnect/jsonrpc-ws-connection": "workspace:*",
-    "@cosmoskitconnect/relay-api": "workspace:*"
-  }
+    "@cosmoskitconnect/jsonrpc-provider": "0.1.2",
+    "@cosmoskitconnect/jsonrpc-ws-connection": "0.1.2",
+    "@cosmoskitconnect/relay-api": "0.1.2"
+  },
+  "gitHead": "97d8ea7026181bcfc2e5bacee623d968528c9f71"
 }

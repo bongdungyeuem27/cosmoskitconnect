@@ -46,7 +46,7 @@
     "format": "prettier --config ../../.prettierrc --write {src,test}/**/*.ts"
   },
   "dependencies": {
-    "@cosmoskitconnect/safe-json": "workspace:*",
+    "@cosmoskitconnect/safe-json": "0.1.2",
     "idb-keyval": "^6.2.1",
     "unstorage": "^1.9.0"
   },
@@ -59,7 +59,7 @@
     }
   },
   "devDependencies": {
-    "@cosmoskitconnect/time": "workspace:*",
+    "@cosmoskitconnect/time": "0.1.2",
     "@react-native-async-storage/async-storage": "^1.17.3",
     "@types/jest": "^26.0.15",
     "@types/node": "^14.14.7",
@@ -71,5 +71,6 @@
     "ts-node": "^10.9.1",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
-  }
+  },
+  "gitHead": "97d8ea7026181bcfc2e5bacee623d968528c9f71"
 }

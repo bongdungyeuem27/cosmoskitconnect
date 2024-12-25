@@ -47,8 +47,8 @@
     "format": "prettier --config ../../.prettierrc --write {src,test}/**/*.ts"
   },
   "dependencies": {
-    "@cosmoskitconnect/environment": "workspace:*",
-    "@cosmoskitconnect/jsonrpc-types": "workspace:*"
+    "@cosmoskitconnect/environment": "0.1.2",
+    "@cosmoskitconnect/jsonrpc-types": "0.1.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
@@ -71,5 +71,6 @@
     "ts-node": "^9.0.0",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
-  }
+  },
+  "gitHead": "97d8ea7026181bcfc2e5bacee623d968528c9f71"
 }

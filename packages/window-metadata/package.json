@@ -44,7 +44,7 @@
     "format": "prettier --config ../../.prettierrc --write {src,test}/**/*.ts"
   },
   "dependencies": {
-    "@cosmoskitconnect/window-getters": "workspace:*"
+    "@cosmoskitconnect/window-getters": "0.1.2"
   },
   "devDependencies": {
     "@types/bn.js": "4.11.6",
@@ -52,5 +52,6 @@
     "@types/node": "^14.14.7",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
-  }
+  },
+  "gitHead": "97d8ea7026181bcfc2e5bacee623d968528c9f71"
 }
