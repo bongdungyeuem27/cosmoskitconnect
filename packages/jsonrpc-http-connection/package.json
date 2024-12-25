@@ -1,7 +1,7 @@
 {
   "name": "@cosmoskitconnect/jsonrpc-http-connection",
   "description": "HTTP Connection for JSON-RPC",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "license": "MIT",
   "homepage": "https://github.com/WalletConnect/walletconnect-utils/",

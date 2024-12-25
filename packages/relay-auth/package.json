@@ -1,7 +1,7 @@
 {
   "name": "@cosmoskitconnect/relay-auth",
   "description": "Relay Client Authentication",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "license": "MIT",
   "keywords": [
