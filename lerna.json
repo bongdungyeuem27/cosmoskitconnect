@@ -35,7 +35,7 @@
     "packages/jsonrpc-http-connection",
     "packages/jsonrpc-ws-connection"
   ],
-  "version": "independent",
+  "version": "0.1.0",
   "registry": "https://registry.npmjs.org",
   "command": {
     "create": {

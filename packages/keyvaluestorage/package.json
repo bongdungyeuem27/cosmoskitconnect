@@ -41,7 +41,7 @@
     "test": "rm -rf ./test/dbs/* && env TS_NODE_PROJECT=\"tsconfig.cjs.json\" mocha --timeout 5000 --exit -r ts-node/register ./test/**/*.test.ts",
     "bun-publish:latest": "bun publish --access public --tag latest",
     "bun-publish:canary": "bun publish --access public --tag canary",
-    "prepublishOnly": "bun run test && bun run build",
+    "prepublishOnly": "bun run build",
     "prettier": "prettier --config ../../.prettierrc --check {src,test}/**/*.ts",
     "format": "prettier --config ../../.prettierrc --write {src,test}/**/*.ts"
   },

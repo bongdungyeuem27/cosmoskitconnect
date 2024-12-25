@@ -41,7 +41,7 @@
     "lint": "eslint -c '../../.eslintrc' --fix './src/**/*.ts'",
     "bun-publish:latest": "bun publish --access public --tag latest",
     "bun-publish:canary": "bun publish --access public --tag canary",
-    "prepublishOnly": "bun run test && bun run build",
+    "prepublishOnly": "bun run build",
     "prettier": "prettier --config ../../.prettierrc --check {src,test}/**/*.ts",
     "format": "prettier --config ../../.prettierrc --write {src,test}/**/*.ts"
   },

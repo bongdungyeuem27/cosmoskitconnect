@@ -31,7 +31,8 @@
     "bun-publish:rc": "lerna exec --no-private -- bun publish --access public --tag rc",
     "bun-publish:latest": "lerna exec --no-private -- bun publish --access public --tag latest",
     "bun-publish:next": "lerna exec --no-private -- bun publish --access public --tag next",
-    "bun-publish:canary": "lerna exec --no-private -- bun publish --access public --tag canary"
+    "bun-publish:canary": "lerna exec --no-private -- bun publish --access public --tag canary",
+    "pub:beta": "lerna exec --no-private -- bun publish --access public --tag beta"
   },
   "repository": {
     "type": "git",
