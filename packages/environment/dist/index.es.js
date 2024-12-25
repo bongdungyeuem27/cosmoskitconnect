@@ -1,0 +1,2 @@
+function e(){return(global==null?void 0:global.crypto)||(global==null?void 0:global.msCrypto)||{}}function o(){const t=e();return t.subtle||t.webkitSubtle}function i(){return!!e()&&!!o()}function n(){return typeof document>"u"&&typeof navigator<"u"&&navigator.product==="ReactNative"}function r(){return typeof process<"u"&&typeof process.versions<"u"&&typeof process.versions.node<"u"}function u(){return!n()&&!r()}export{e as getBrowerCrypto,o as getSubtleCrypto,u as isBrowser,i as isBrowserCryptoAvailable,r as isNode,n as isReactNative};
+//# sourceMappingURL=index.es.js.map
