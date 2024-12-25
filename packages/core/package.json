@@ -1,7 +1,7 @@
 {
   "name": "@cosmoskitconnect/core",
   "description": "Core for WalletConnect Protocol",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "homepage": "https://github.com/walletconnect/walletconnect-monorepo/",
   "license": "Apache-2.0",
