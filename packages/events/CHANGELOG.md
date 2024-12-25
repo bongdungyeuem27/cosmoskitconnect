@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/WalletConnect/walletconnect-utils/compare/@cosmoskitconnect/events@0.1.2...@cosmoskitconnect/events@0.1.3) (2024-12-25)
+
+### Bug Fixes
+
+- change ([aead034](https://github.com/WalletConnect/walletconnect-utils/commit/aead0344c38be6ffae5c2fcb75657e9bf119c0d9))
+- pub ([685791f](https://github.com/WalletConnect/walletconnect-utils/commit/685791fb67186a7d425d2512dbeabc33ed3a6fbd))
+
 ## 0.1.2 (2024-12-25)
 
 ### Bug Fixes

@@ -1,7 +1,7 @@
 {
   "name": "@cosmoskitconnect/sign-client",
   "description": "Sign Client for WalletConnect Protocol",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "homepage": "https://github.com/walletconnect/walletconnect-monorepo/",
   "license": "Apache-2.0",
@@ -40,21 +40,21 @@
     "prettier": "prettier --check '{src,test}/**/*.{js,ts,jsx,tsx}'"
   },
   "dependencies": {
-    "@cosmoskitconnect/core": "0.1.2",
-    "@cosmoskitconnect/events": "0.1.2",
-    "@cosmoskitconnect/heartbeat": "0.1.2",
-    "@cosmoskitconnect/jsonrpc-utils": "0.1.2",
-    "@cosmoskitconnect/logger": "0.1.2",
-    "@cosmoskitconnect/time": "0.1.2",
-    "@cosmoskitconnect/types": "0.1.2",
-    "@cosmoskitconnect/utils": "0.1.2",
+    "@cosmoskitconnect/core": "^0.1.3",
+    "@cosmoskitconnect/events": "^0.1.3",
+    "@cosmoskitconnect/heartbeat": "^0.1.3",
+    "@cosmoskitconnect/jsonrpc-utils": "^0.1.3",
+    "@cosmoskitconnect/logger": "^0.1.3",
+    "@cosmoskitconnect/time": "^0.1.3",
+    "@cosmoskitconnect/types": "^0.1.3",
+    "@cosmoskitconnect/utils": "^0.1.3",
     "events": "3.3.0"
   },
   "devDependencies": {
     "@aws-sdk/client-cloudwatch": "3.450.0",
-    "@cosmoskitconnect/jsonrpc-provider": "0.1.2",
-    "@cosmoskitconnect/jsonrpc-ws-connection": "0.1.2",
-    "@cosmoskitconnect/relay-api": "0.1.2"
+    "@cosmoskitconnect/jsonrpc-provider": "^0.1.3",
+    "@cosmoskitconnect/jsonrpc-ws-connection": "^0.1.3",
+    "@cosmoskitconnect/relay-api": "^0.1.3"
   },
   "gitHead": "bf4e911852bf89c528d98e2d9518766b9d50b038"
 }

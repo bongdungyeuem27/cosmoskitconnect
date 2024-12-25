@@ -1,7 +1,7 @@
 {
   "name": "@cosmoskitconnect/safe-json",
   "description": "Safe Json Utils",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "license": "MIT",
   "keywords": [

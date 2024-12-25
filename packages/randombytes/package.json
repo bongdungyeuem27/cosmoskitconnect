@@ -1,7 +1,7 @@
 {
   "name": "@cosmoskitconnect/randombytes",
   "description": "Isomorphic Library for Random Bytes",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "license": "MIT",
   "keywords": [
@@ -43,8 +43,8 @@
     "format": "prettier --config ../../.prettierrc --write {src,test}/**/*.ts"
   },
   "dependencies": {
-    "@cosmoskitconnect/encoding": "0.1.2",
-    "@cosmoskitconnect/environment": "0.1.2",
+    "@cosmoskitconnect/encoding": "^0.1.3",
+    "@cosmoskitconnect/environment": "^0.1.3",
     "randombytes": "^2.1.0",
     "tslib": "1.14.1"
   },

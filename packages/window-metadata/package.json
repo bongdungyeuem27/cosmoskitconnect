@@ -1,7 +1,7 @@
 {
   "name": "@cosmoskitconnect/window-metadata",
   "description": "Scrape Window Metadata",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "license": "MIT",
   "keywords": [
@@ -44,7 +44,7 @@
     "format": "prettier --config ../../.prettierrc --write {src,test}/**/*.ts"
   },
   "dependencies": {
-    "@cosmoskitconnect/window-getters": "0.1.2"
+    "@cosmoskitconnect/window-getters": "^0.1.3"
   },
   "devDependencies": {
     "@types/bn.js": "4.11.6",

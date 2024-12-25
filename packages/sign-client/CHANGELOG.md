@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/bongdungyeuem27/cosmoskitconnect/compare/@cosmoskitconnect/sign-client@0.2.0...@cosmoskitconnect/sign-client@0.1.3) (2024-12-25)
+
+### Bug Fixes
+
+- change ([aead034](https://github.com/bongdungyeuem27/cosmoskitconnect/commit/aead0344c38be6ffae5c2fcb75657e9bf119c0d9))
+- change ([97d8ea7](https://github.com/bongdungyeuem27/cosmoskitconnect/commit/97d8ea7026181bcfc2e5bacee623d968528c9f71))
+- change ([021e06f](https://github.com/bongdungyeuem27/cosmoskitconnect/commit/021e06f1e3e392185aa017dda950690f4b3d7e90))
+- pub ([685791f](https://github.com/bongdungyeuem27/cosmoskitconnect/commit/685791fb67186a7d425d2512dbeabc33ed3a6fbd))
+
 # 0.2.0 (2024-12-25)
 
 ### Bug Fixes

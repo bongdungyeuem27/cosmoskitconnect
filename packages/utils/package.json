@@ -1,7 +1,7 @@
 {
   "name": "@cosmoskitconnect/utils",
   "description": "Utilities for WalletConnect Protocol",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "homepage": "https://github.com/walletconnect/walletconnect-monorepo/",
   "license": "Apache-2.0",
@@ -33,15 +33,15 @@
     "prettier": "prettier --check '{src,test}/**/*.{js,ts,jsx,tsx}'"
   },
   "dependencies": {
-    "@cosmoskitconnect/jsonrpc-utils": "0.1.2",
-    "@cosmoskitconnect/keyvaluestorage": "0.1.2",
-    "@cosmoskitconnect/relay-api": "0.1.2",
-    "@cosmoskitconnect/relay-auth": "0.1.2",
-    "@cosmoskitconnect/safe-json": "0.1.2",
-    "@cosmoskitconnect/time": "0.1.2",
-    "@cosmoskitconnect/types": "0.1.2",
-    "@cosmoskitconnect/window-getters": "0.1.2",
-    "@cosmoskitconnect/window-metadata": "0.1.2",
+    "@cosmoskitconnect/jsonrpc-utils": "^0.1.3",
+    "@cosmoskitconnect/keyvaluestorage": "^0.1.3",
+    "@cosmoskitconnect/relay-api": "^0.1.3",
+    "@cosmoskitconnect/relay-auth": "^0.1.3",
+    "@cosmoskitconnect/safe-json": "^0.1.3",
+    "@cosmoskitconnect/time": "^0.1.3",
+    "@cosmoskitconnect/types": "^0.1.3",
+    "@cosmoskitconnect/window-getters": "^0.1.3",
+    "@cosmoskitconnect/window-metadata": "^0.1.3",
     "@ethersproject/hash": "5.7.0",
     "@ethersproject/transactions": "5.7.0",
     "@stablelib/chacha20poly1305": "1.0.1",
@@ -55,7 +55,7 @@
     "uint8arrays": "3.1.0"
   },
   "devDependencies": {
-    "@cosmoskitconnect/jsonrpc-types": "0.1.2",
+    "@cosmoskitconnect/jsonrpc-types": "^0.1.3",
     "@types/elliptic": "6.4.18",
     "@types/lodash.isequal": "4.5.6"
   },
