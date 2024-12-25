@@ -1,7 +1,7 @@
 {
-  "name": "@cosmoskitconnect/jsonrpc-types",
-  "description": "Typings for JSON-RPC",
-  "version": "1.0.4",
+  "name": "@cosmoskitconnect/jsonrpc-utils",
+  "description": "Utilities for JSON-RPC",
+  "version": "1.0.8",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "license": "MIT",
   "homepage": "https://github.com/WalletConnect/walletconnect-utils/",
@@ -13,6 +13,7 @@
     "url": "https://github.com/WalletConnect/walletconnect-utils/issues"
   },
   "main": "dist/index.cjs.js",
+  "source": "./src/index.ts",
   "module": "dist/index.es.js",
   "browser": "dist/index.es.js",
   "unpkg": "dist/index.umd.js",
@@ -32,11 +33,12 @@
   ],
   "scripts": {
     "clean": "rm -rf dist",
+"prepare": "bun run build",
     "build:pre": "bun run clean",
     "build:types": "tsc",
     "build:source": "rollup --config rollup.config.js",
     "build": "bun run build:pre && bun run build:source && bun run build:types",
-    "test": "env TS_NODE_PROJECT=\"tsconfig.cjs.json\" mocha --timeout 5000 --exit -r ts-node/register ./test/**/*.test.ts",
+    "test": "env TS_NODE_PROJECT=\"tsconfig.cjs.json\" mocha -r ts-node/register ./test/**/*.{test,spec}.ts",
     "lint": "eslint -c '../../.eslintrc' --fix './src/**/*.ts'",
     "bun-publish:latest": "bun publish --access public --tag latest",
     "bun-publish:canary": "bun publish --access public --tag canary",
@@ -45,8 +47,8 @@
     "format": "prettier --config ../../.prettierrc --write {src,test}/**/*.ts"
   },
   "dependencies": {
-    "events": "^3.3.0",
-    "keyvaluestorage-interface": "^1.0.0"
+    "@cosmoskitconnect/environment": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-types": "workspace:*"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
@@ -58,12 +60,16 @@
     "@babel/register": "^7.12.1",
     "@types/chai": "^4.2.14",
     "@types/jest": "^26.0.15",
+    "@types/lodash.isequal": "^4.5.5",
     "@types/mocha": "^8.2.0",
     "@types/node": "^14.14.7",
+    "@walletconnect/timestamp": "1.0.0",
     "chai": "^4.2.0",
     "core-js": "^3.6.5",
+    "lodash.isequal": "4.5.0",
     "mocha": "^8.1.3",
-    "bun-run-all": "^4.1.5",
+
+    "ts-node": "^9.0.0",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
   }

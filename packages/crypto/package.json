@@ -31,10 +31,11 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
+"prepare": "bun run build",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:umd": "webpack",
-    "build": "pbun run clean && pbun run build:cjs && pbun run build:esm && pbun run build:umd",
+    "build": "bun run clean && bun run build:cjs && bun run build:esm && bun run build:umd",
     "test": "env TS_NODE_PROJECT=\"tsconfig.cjs.json\" mocha --exit -r ts-node/register -r jsdom-global/register ./test/**/*.test.ts",
     "lint": "eslint -c '../../.eslintrc' --fix './src/**/*.ts'",
     "bun-publish:latest": "bun publish --access public --tag latest",

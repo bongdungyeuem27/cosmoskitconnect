@@ -67,7 +67,34 @@
     "typescript": "4.9.5",
     "vitest": "0.22.1"
   },
-  "workspaces":[
-    "packages/*"
+  "workspaces": [
+    "packages/types",
+    "packages/jsonrpc-types",
+    "packages/utils",
+    "packages/events",
+    "packages/did-jwt",
+    "packages/cacao",
+    "packages/environment",
+    "packages/encoding",
+    "packages/safe-json",
+    "packages/logger",
+    "packages/time",
+    "packages/relay-auth",
+    "packages/keyvaluestorage",
+    "packages/randombytes",
+    "packages/crypto",
+    "packages/window-getters",
+    "packages/window-metadata",
+    "packages/ecies-25519",
+    "packages/heartbeat",
+    "packages/jsonrpc-utils",
+    "packages/jsonrpc-provider",
+    "packages/jsonrpc-http-connection",
+    "packages/jsonrpc-ws-connection",
+    "packages/core",
+    "packages/identity-keys",
+    "packages/relay-api",
+    "packages/sign-client",
+    "packages/history"
   ]
 }

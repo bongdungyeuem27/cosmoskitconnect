@@ -19,6 +19,7 @@
     "dist"
   ],
   "main": "dist/index.cjs.js",
+  "source": "./src/index.ts",
   "module": "dist/index.es.js",
   "browser": "dist/index.es.js",
   "unpkg": "dist/index.umd.js",
@@ -33,6 +34,7 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
+"prepare": "bun run build",
     "build:pre": "bun run clean",
     "build:types": "tsc",
     "build:source": "rollup --config rollup.config.js",
