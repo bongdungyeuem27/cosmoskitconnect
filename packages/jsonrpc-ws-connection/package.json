@@ -62,7 +62,7 @@
     "@babel/register": "^7.12.1",
     "@cosmoskitconnect/relay-api": "0.1.2",
     "@cosmoskitconnect/relay-auth": "0.1.2",
-    "@cosmoskitconnect/safe-json": "workspace:*",
+    "@cosmoskitconnect/safe-json": "0.1.2",
     "@cosmoskitconnect/time": "0.1.2",
     "@cosmoskitconnect/utils": "0.1.2",
     "@cosmoskitconnect/window-getters": "0.1.2",
