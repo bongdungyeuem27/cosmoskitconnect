@@ -1,7 +1,7 @@
 {
   "name": "@cosmoskitconnect/environment",
   "description": "Environment utilities",
-  "version": "1.0.1",
+  "version": "0.1.1",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "license": "MIT",
   "keywords": [
@@ -31,7 +31,7 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-"prepare": "bun run build",
+    "prepare": "bun run build",
     "build:pre": "bun run clean",
     "build:types": "tsc",
     "build:source": "rollup --config rollup.config.js",

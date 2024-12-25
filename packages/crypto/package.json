@@ -1,7 +1,7 @@
 {
   "name": "@cosmoskitconnect/crypto",
   "description": "Isomorphic Cryptography Library for AES, HMAC and SHA2",
-  "version": "1.0.3",
+  "version": "0.1.1",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "license": "MIT",
   "keywords": [
@@ -31,7 +31,7 @@
   },
   "scripts": {
     "clean": "rm -rf dist",
-"prepare": "bun run build",
+    "prepare": "bun run build",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "build:esm": "tsc -p tsconfig.esm.json",
     "build:umd": "webpack",

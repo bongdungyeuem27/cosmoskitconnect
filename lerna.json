@@ -6,36 +6,36 @@
     "--no-lockfile"
   ],
   "packages": [
-   "packages/types",
+  "packages/types",
     "packages/jsonrpc-types",
     "packages/utils",
     "packages/events",
-    "packages/ecies-25519",
-    "packages/heartbeat",
-    "packages/window-getters",
-    "packages/window-metadata",
     "packages/did-jwt",
-    "packages/time",
-    "packages/randombytes",
-    "packages/crypto",
     "packages/cacao",
-    "packages/relay-api",
     "packages/environment",
     "packages/encoding",
-    "packages/keyvaluestorage",
     "packages/safe-json",
-    "packages/history",
     "packages/logger",
+    "packages/time",
     "packages/relay-auth",
-    "packages/core",
-    "packages/identity-keys",
-    "packages/sign-client",
+    "packages/keyvaluestorage",
+    "packages/randombytes",
+    "packages/crypto",
+    "packages/window-getters",
+    "packages/window-metadata",
+    "packages/ecies-25519",
+    "packages/heartbeat",
     "packages/jsonrpc-utils",
     "packages/jsonrpc-provider",
     "packages/jsonrpc-http-connection",
-    "packages/jsonrpc-ws-connection"
+    "packages/jsonrpc-ws-connection",
+    "packages/core",
+    "packages/identity-keys",
+    "packages/relay-api",
+    "packages/sign-client",
+    "packages/history"
   ],
-  "version": "0.1.0",
+  "version": "independent",
   "registry": "https://registry.npmjs.org",
   "command": {
     "create": {
@@ -44,7 +44,7 @@
       "access": "public"
     },
     "publish": {
-      "allowBranch": "main",
+      "allowBranch": "v2.0",
       "message": "chore(release): publish"
     }
   }

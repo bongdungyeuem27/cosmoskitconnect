@@ -1,6 +1,6 @@
 {
   "name": "@cosmoskitconnect/cacao",
-  "version": "1.0.2",
+  "version": "0.1.1",
   "description": "Utilities for creating and verifying CACAOs",
   "keywords": [
     "cacao",
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "clean": "rm -rf dist",
-"prepare": "bun run build",
+    "prepare": "bun run build",
     "build:pre": "bun run clean",
     "build:types": "tsc",
     "build:source": "rollup --config rollup.config.js",

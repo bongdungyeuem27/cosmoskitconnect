@@ -1,6 +1,6 @@
 {
   "name": "@cosmoskitconnect/history",
-  "version": "1.0.5",
+  "version": "0.1.1",
   "description": "Utilities for communicating with history server",
   "keywords": [
     "history",
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "clean": "rm -rf dist",
-"prepare": "bun run build",
+    "prepare": "bun run build",
     "build:pre": "bun run clean",
     "build:types": "tsc",
     "build:source": "rollup --config rollup.config.js",
@@ -44,9 +44,9 @@
   "devDependencies": {
     "@cosmoskitconnect/core": "workspace:*",
     "@cosmoskitconnect/events": "workspace:*",
-    "@cosmoskitconnect/jsonrpc-utils": "workspace:*",
-    "@cosmoskitconnect/jsonrpc-types": "workspace:*",
     "@cosmoskitconnect/jsonrpc-provider": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-types": "workspace:*",
+    "@cosmoskitconnect/jsonrpc-utils": "workspace:*",
     "@cosmoskitconnect/keyvaluestorage": "workspace:*",
     "@cosmoskitconnect/logger": "workspace:*",
     "@cosmoskitconnect/relay-api": "workspace:*",
@@ -59,9 +59,9 @@
     "lokijs": "^1.5.12"
   },
   "dependencies": {
+    "@cosmoskitconnect/utils": "workspace:*",
     "@ethersproject/hash": "^5.7.0",
     "@ethersproject/transactions": "^5.7.0",
-    "@cosmoskitconnect/utils": "workspace:*",
     "isomorphic-unfetch": "^3.1.0"
   }
 }
