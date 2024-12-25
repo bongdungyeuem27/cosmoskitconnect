@@ -2,11 +2,9 @@
   "lerna": "7",
   "conventionalCommits": true,
   "npmClient": "bun",
-  "npmClientArgs": [
-    "--no-lockfile"
-  ],
+  "npmClientArgs": ["--no-lockfile"],
   "packages": [
-  "packages/types",
+    "packages/types",
     "packages/jsonrpc-types",
     "packages/utils",
     "packages/events",
@@ -44,7 +42,7 @@
       "access": "public"
     },
     "publish": {
-      "allowBranch": "v2.0",
+      "allowBranch": "res",
       "message": "chore(release): publish"
     }
   }
